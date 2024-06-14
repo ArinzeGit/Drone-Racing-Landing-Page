@@ -53,7 +53,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: View the GitHub repository [here](https://github.com/ArinzeGit/From-Figma-To-Code-Final-Challenge-Solution)
-- Live Site URL: I have hosted the project on GitHub Pages [here]()
+- Live Site URL: I have hosted the project on GitHub Pages [here](https://arinzegit.github.io/From-Figma-To-Code-Final-Challenge-Solution/)
 
 ## My process
 
