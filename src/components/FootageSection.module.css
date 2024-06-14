@@ -1,0 +1,88 @@
+.footage-section{
+    padding: 3.312rem 0 2.438rem;
+
+    @media (min-width:900px){
+        position:relative;
+        min-height: 52.625rem;
+        padding:0;
+    }
+}
+
+.text-container{
+    width:min(90%,500px);
+
+    @media (min-width:900px){
+        width:max(23.125rem,26.82% + 4.851rem); 
+        /*initially it is 23.125rem then later increases at that rate.
+        The width of .gallery down below is a consequence of this*/
+        position:absolute;
+        top:50%;
+        left:-6.851rem;
+        transform:translateY(-50%);
+    }
+}
+
+.title{
+    text-transform: uppercase;
+    font-family: CustomHeadingFont;
+    font-size:2.25rem;
+    line-height: .916;
+    font-weight: 400;
+
+    @media (min-width:900px){
+        font-size:6.063rem;
+    }
+}
+
+.text{
+    font-family: CustomTextFont;
+    font-size:1.125rem;
+    line-height: 1.416;
+    margin:2.167em 0;
+
+    @media (min-width:900px){
+        font-size:1.5rem;
+        margin:2.5em 0 0;
+    }
+}
+
+.gallery{
+    display: grid;
+    grid-template-areas:
+     ". a b"
+     "c d ."
+     ". e .";
+
+     @media (min-width:900px){
+        width:min(100% - 18.274rem,73.18%);
+        /* to remember how you came about it add the two values to the two values of the width of .text-container
+        You'll get 100%+4.851rem in both cases cuz they are to sit side by side with 2rem between and overflow by 6.851rem*/
+        margin-left:auto;
+        transform: translateY(-16.667%);
+    }
+}
+
+.gallery img:nth-of-type(1){
+    grid-area: a;
+}
+
+.gallery img:nth-of-type(2){
+    grid-area: b;
+}
+
+.gallery img:nth-of-type(3){
+    grid-area: c;
+}
+
+.gallery img:nth-of-type(4){
+    grid-area: d;
+}
+
+.gallery img:nth-of-type(5){
+    grid-area: e;
+}
+
+.gallery img {
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+}

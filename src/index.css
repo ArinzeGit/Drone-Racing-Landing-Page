@@ -1,0 +1,27 @@
+@font-face {
+    font-family: CustomHeadingFont;
+    src: url(/src/assets/font/BebasNeue-Regular.ttf);
+    font-weight: 400;
+}
+@font-face {
+    font-family: CustomTextFont;
+    src: url(/src/assets/font/Montserrat-VariableFont_wght.ttf);
+    font-weight: 400;
+}
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: CustomTextFont,sans-serif;
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+h1,h2,p{
+    margin: 0;
+}

@@ -1,0 +1,33 @@
+.drone{
+    position: relative;
+}
+
+.drone-body{
+    position: relative;
+    animation: hover 2s alternate-reverse infinite;
+}
+
+
+.drone-shadow{
+    position: absolute;
+    left: 0;
+    top: 10%;
+    opacity: .4;
+    animation: pulse 2s alternate-reverse infinite;
+}
+
+@keyframes hover {
+    from {
+        transform: translateY(-30px); 
+    }
+}
+
+@keyframes pulse {
+    from {
+        opacity: 0;
+    }
+}
+
+/* remember you can also define the "to" which uses the normal set state of the properties if not set(e.g opacity:.4 in this case).
+ You can also use percentages like "0%"" for "from" and "100%"" for 'to'. You can even add intermediaries like 50%
+Also know that "pulse" and "hover" are not keywords. You can use any word and define it */

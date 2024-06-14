@@ -1,0 +1,14 @@
+.logo{
+    font-family: CustomHeadingFont;
+    font-size: 1.625rem;
+    line-height:0.916;
+    color: white;
+    background-color: #000000;
+    padding: .42em .46em .346em;
+    display: inline-block;
+
+    @media (min-width:900px){
+        font-size: 2.25rem;
+        padding: .5em .694em .361em;
+    }
+  }

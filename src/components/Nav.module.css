@@ -1,0 +1,111 @@
+.nav{
+    background-color:#7988BE ;
+    height:100%;
+    padding: .688rem .438rem;
+    position:relative;
+}
+
+.menu-button{
+    padding:0;
+    background-color: transparent;
+    border:none;
+    height: 32px;
+    width: 32px;
+    display: block;
+    margin:0 20% 0 auto;
+
+    @media (min-width:900px){
+        display: none;
+    }
+}
+
+.menu-button:hover{
+    cursor: pointer;
+    opacity: .7;
+}
+
+.menu{
+    position: absolute;
+    top:0;
+    right:0;
+    background-color: #363B4E;
+    width:clamp(200px,447%,300px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding:2.313rem 2.688rem;
+    transition: clip-path .3s ease-in-out;
+
+    @media (min-width:900px){
+        right:auto;
+        left:clamp(-240.9px,261% - 1245.1px,-58.3px);
+        /*Note: you intentionally solved for those clamp values to make sure that at breakpoint 900px, the left edge of the parent i.e ".nav" 
+        pins ".menu" at exactly between REGISTER AND FAQ, then at 1100px, ".menu" is let loose and it moves relative to left edge of parent 
+        until at 1300px when it is pinned again and finally at exactly between HOME and RACES to match the given 1440px desktop design*/
+        background-color: transparent;
+        width:auto;
+        height: auto;
+        flex-direction: row;
+        align-items:center;
+        padding:0;
+        margin-top: 1.438rem;;
+    }
+}
+
+.hidden{
+    clip-path: circle(0% at 100% 0%);
+
+    @media (min-width:900px){
+        /* clip-path: circle(100% at 50% 50%); */
+        clip-path:none;
+    }
+}
+
+.visible{
+    clip-path: circle(100% at 50% 50%);
+}
+
+.close-button{
+    padding:0;
+    background-color: transparent;
+    border:none;
+    margin-bottom:2.3rem;
+    height: 24px;
+    width: 24px;
+
+    @media (min-width:900px){
+        display:none;
+    }
+}
+
+.close-button:hover{
+    cursor: pointer;
+    opacity: .7;
+}
+
+.menu-item{
+    text-transform:uppercase;
+    color:#FFFFFF;
+    font-family: CustomHeadingFont;
+    font-size: 1.563rem;
+    line-height: 1.416;
+    text-decoration:none ;
+
+    @media (min-width:900px){
+        font-size: 1.5rem;
+        line-height: .916;
+    }
+}
+
+.menu-item + .menu-item{
+    margin:.44em 0 0;
+
+    @media (min-width:900px){
+        margin:0 0 0 1.417em;
+    }
+}
+
+.menu-item:hover{
+    opacity: .7;
+}
