@@ -116,7 +116,7 @@ Users should be able to:
 }
 ```
 
-- I learned more advanced ways of manupulating background images. I learned that I could blend an image with a specific color by setting the solid color as background of the element, then creating a `::before` psedo-element with the image as background to sit over the original element. Then, I apply an opacity to the pseudo-element such that the solid background color beneath seeps through. I needed this to realize the design of the 'Quote' section.
+- I learned more advanced ways of manupulating `background-image`. I learned that I could blend an image with a specific color by setting the solid color as background of the element, then creating a `::before` psedo-element with the image as background to sit over the original element. Then, I apply an opacity to the pseudo-element such that the solid `background-color` beneath seeps through. I needed this to realize the design of the 'Quote' section.
 
 ```css
 .quote-section {
@@ -137,7 +137,7 @@ Users should be able to:
   position: absolute;
   top: 0;
   left: 0;
-  background: url(../assets/img/stadium.png);
+  background-image: url(../assets/img/stadium.png);
   background-size: cover;
   background-position: 8%;
   width: 100%;
@@ -164,7 +164,7 @@ Users should be able to:
 }
 ```
 
-- I learned how to apply animations using CSS by defining an animation in keyframes. I used this to animate the drone image in 'Hero'section, to appear to hover up and down, and for the shadow to get darker when the drone is closer to the ground and lighter when drone goes up.
+- I learned how to apply animations using CSS by defining an animation in `keyframes`. I used this to animate the drone image in 'Hero'section, to appear to hover up and down, and for the shadow to get darker when the drone is closer to the ground and lighter when drone goes up.
 
 ```css
 .drone {
@@ -201,7 +201,7 @@ Users should be able to:
 Also know that "pulse" and "hover" are not keywords. You can use any word and define it */
 ```
 
-- I found a good use case for the `clamp` CSS feature in my menu bar positioning(desktop version). I was able to make my menu bar static within a certain screen-size range, then move responsively within another range, and then stay static again within a third range using the `clamp` feature. Also, since font size can use the `vw` unit and `clamp`can take three values, I am able to declare font sizes for three ranges of viewport widths without a media query. Having delved deep into the capabilities of `clamp`, I am now able to implement dynamic and responsive behaviours that would have otherwise needed multiple media query breakpoints.
+- I found a good use case for the `clamp` CSS feature in my menu bar positioning (desktop version). I was able to make my menu bar static within a certain screen-size range, then move responsively within another range, and then stay static again within a third range using the `clamp` feature. Also, since font size can use the `vw` unit and `clamp`can take three values, I am able to declare font sizes for three ranges of viewport widths without a media query. Having delved deep into the capabilities of `clamp`, I am now able to implement dynamic and responsive behaviours that would have otherwise needed multiple media query breakpoints.
 
 ```css
 .menu {
@@ -254,7 +254,7 @@ Also know that "pulse" and "hover" are not keywords. You can use any word and de
 }
 ```
 
-- Finally and generally, I learned to work with Figma design files. I have gotten familiar with reading typography, layout, and color specifications directly from Figma. I have also learnt to grab assets and text directly from the Figma design.
+- Finally and generally, I learned to work with `Figma` design files. I have gotten familiar with reading typography, layout, and color specifications directly from Figma. I have also learnt to grab assets and text directly from the Figma design.
 
 ### Continued development
 

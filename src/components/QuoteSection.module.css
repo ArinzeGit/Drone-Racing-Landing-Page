@@ -16,7 +16,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: url(../assets/img/stadium.png);
+    background-image: url(../assets/img/stadium.png);
     background-size:cover;
     background-position: 8%;
     width: 100%;
