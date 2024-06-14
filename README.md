@@ -201,7 +201,7 @@ Users should be able to:
 Also know that "pulse" and "hover" are not keywords. You can use any word and define it */
 ```
 
-- I found a good use case for the `clamp` CSS feature in my menu bar positioning(desktop version). I was able to make my menu bar static within a certain screen-size range, then move responsively within another range, and then stay static again within a third range using the `clamp` feature and only one breakpoint. Having delved deep into the capabilities of clamp, I am now able to realise dynamic behaviours with one media-query breakpoint that would otherwise have needed multiple breakpoints.
+- I found a good use case for the `clamp` CSS feature in my menu bar positioning(desktop version). I was able to make my menu bar static within a certain screen-size range, then move responsively within another range, and then stay static again within a third range using the `clamp` feature. Also, since font size can use the `vw` unit and `clamp`can take three values, I am able to declare font sizes for three ranges of viewport widths without a media query. Having delved deep into the capabilities of `clamp`, I am now able to implement dynamic and responsive behaviours that would have otherwise needed multiple media query breakpoints.
 
 ```css
 .menu {
@@ -230,6 +230,26 @@ Also know that "pulse" and "hover" are not keywords. You can use any word and de
     align-items: center;
     padding: 0;
     margin-top: 1.438rem;
+  }
+}
+
+.title {
+  font-family: CustomHeadingFont;
+  text-transform: uppercase;
+  font-size: clamp(5vw, 2.25rem, 9vw); /*dynamic font size*/
+  font-weight: 400;
+  line-height: 0.916;
+  width: 90%;
+  padding: 0.806em 0 0.667em 15%;
+  margin-bottom: 1.083em;
+
+  @media (min-width: 900px) {
+    display: inline-block;
+    width: auto;
+    font-size: 4rem;
+    padding: 0.672em 0.739em 0.391em;
+    padding-left: calc(20% - 6.851rem);
+    margin-bottom: 0.906em;
   }
 }
 ```
