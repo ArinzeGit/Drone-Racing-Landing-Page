@@ -1,6 +1,6 @@
 # Drone Racing Landing Page
 
-This project was inspired by the final challenge of the [From Figma To Code](https://www.coursera.org/learn/from-figma-to-code) course on [Coursera](https://www.coursera.org/). Prior to taking the course, I built only from PDF design files. I took the course to learn to build sites from Figma design files which is more typical in professional environment. The course was taught in `HTML CSS and JavaScript` but I have implemented this solution in `React-TypeScript`.
+This project was inspired by the final challenge of the [From Figma To Code](https://www.coursera.org/learn/from-figma-to-code) course on [Coursera](https://www.coursera.org/). Prior to taking the course, I built only from PDF design files. I took the course to learn to build sites from Figma design files which is more typical in professional environment. The course was taught in `HTML CSS and JavaScript` but I have implemented this solution in `React-TypeScript` to enhance functionality and maintainability.
 
 ## Table of contents
 
