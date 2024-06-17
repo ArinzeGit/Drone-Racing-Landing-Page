@@ -4,5 +4,5 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base:"/From-Figma-To-Code-Final-Challenge-Solution/"
+  base:"/Drone-Racing-Landing-Page/"
 })
