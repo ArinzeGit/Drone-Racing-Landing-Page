@@ -29,7 +29,7 @@ Users should be able to:
 
 ### My additional features
 
-- I implemented the solution in `React-TypeScript` despite the course teaching in `HTML, CSS, JavaScript` to enhance functionality and maintainability.
+- I implemented the solution in `React-TypeScript`, even though the course was taught in `HTML, CSS, and JavaScript`, to enhance functionality and maintainability.
 - I implemented a cool animation for the drone image in the 'hero' section.
 - I implemented `client-side form validation` for the email signup section.
   - On submission, user receives error message with error icon if any input field is empty.
