@@ -53,8 +53,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: View the GitHub repository [here](https://github.com/ArinzeGit/Drone-Racing-Landing-Page)
-- Live Site URL: I have hosted the project on GitHub Pages [here](https://arinzegit.github.io/Drone-Racing-Landing-Page/)
+- [GitHub Repository](https://github.com/ArinzeGit/Drone-Racing-Landing-Page)
+- [Live Site URL](https://arinzegit.github.io/Drone-Racing-Landing-Page/)
 
 ## My process
 
